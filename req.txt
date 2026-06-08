@@ -1,0 +1,17 @@
+# 核心数值计算
+numpy>=1.24.0
+
+# 深度学习框架 (PPO 网络)
+torch>=2.0.0
+
+# 强化学习环境接口
+gymnasium>=0.28.0
+
+# 多Agent博弈图引擎
+langgraph>=0.0.50
+
+# Web 可视化前端
+streamlit>=1.28.0
+
+# 绘图库
+matplotlib>=3.7.0
