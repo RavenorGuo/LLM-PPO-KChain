@@ -1,0 +1,59 @@
+{
+  "requirement": "提升时间效率, 优先级=time_sensitive",
+  "req_vector": {
+    "w_kill": 0.28,
+    "w_cost": 0.28,
+    "w_time": 0.64,
+    "w_info": 0.1,
+    "w_network": 0.1,
+    "target_priority": "time_sensitive",
+    "constraints": {
+      "time_window_180": true
+    }
+  },
+  "game_result": {
+    "converged": true,
+    "rounds": 8,
+    "nash_equilibrium": {
+      "scores": {
+        "sensor": 0.08526095442698346,
+        "weapon": 0.09684990707287977,
+        "command": 1.0,
+        "resource": 0.15178697915754175
+      },
+      "rankings": [
+        "command",
+        "resource",
+        "weapon",
+        "sensor"
+      ],
+      "round": 8,
+      "nash_product": 0.0012533833350949208
+    }
+  },
+  "reward_params": {
+    "alpha": 0.0194,
+    "beta": 0.0304,
+    "gamma": 2.0,
+    "delta": 0.0171,
+    "epsilon": 0.1085,
+    "min_kill_prob": 0.5,
+    "max_cost": 1000.0,
+    "time_window": 300.0,
+    "nash_product": 0.0012533833350949208,
+    "rounds_to_converge": 8
+  },
+  "ppo_training": {
+    "episodes": 200,
+    "final_avg_reward": 101.52000000000002,
+    "best_reward": 101.52000000000001,
+    "final_loss": NaN
+  },
+  "inference": {
+    "total_reward": 60.590030789654065,
+    "avg_kill_score": 0.004133709627492329,
+    "avg_cost": 5.149627059895729,
+    "platforms_used": 1,
+    "steps": 30
+  }
+}

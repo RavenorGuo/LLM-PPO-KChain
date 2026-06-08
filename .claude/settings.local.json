@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda activate *)",
+      "Bash(python -c \"import torch; print\\('PyTorch:', torch.__version__\\)\")",
+      "Bash(python -c \"import matplotlib; print\\('Matplotlib:', matplotlib.__version__\\)\")",
+      "Bash(python -c \"import numpy; print\\('NumPy:', numpy.__version__\\)\")",
+      "Bash(pip list *)",
+      "Bash(D:/Conda/envs/py310/python.exe --version)",
+      "Bash(D:/Conda/envs/py310/python.exe -c \"import torch; print\\('Torch:', torch.__version__\\)\")",
+      "Bash(cmd.exe *)",
+      "Bash(conda run *)",
+      "Bash(D:/Conda/envs/py310/python.exe *)",
+      "Bash(python -c \"import ast; [ast.parse\\(open\\(f\\).read\\(\\)\\) for f in ['model.py','app.py','agent.py','main.py','ppo.py']]\")",
+      "Bash(python -c \"import ast; [ast.parse\\(open\\(f, encoding='utf-8'\\).read\\(\\)\\) for f in ['model.py','app.py','agent.py','main.py','ppo.py']]\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app.py', encoding='utf-8'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app.py', encoding='utf-8'\\).read\\(\\)\\); ast.parse\\(open\\('model.py', encoding='utf-8'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")",
+      "Bash(rm -rf \"C:/Users/ROG/Desktop/WS/__pycache__\")",
+      "Bash(python -c \"from model import KillChainEnv; import inspect; print\\(inspect.signature\\(KillChainEnv.__init__\\)\\)\")",
+      "Bash(rm -rf __pycache__)",
+      "Bash(python *)"
+    ]
+  }
+}
